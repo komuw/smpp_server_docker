@@ -1,4 +1,5 @@
-# docker image for SMPP simulator from http://www.seleniumsoftware.com/              
+# About            
+docker image for SMPP simulator from http://www.seleniumsoftware.com/              
 
 
 # usage           
