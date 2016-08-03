@@ -57,7 +57,7 @@ PERCENTAGE_REJECTED=2
 DISCARD_FROM_QUEUE_AFTER=60000
 
 # Web Management
-HTTP_PORT=88
+HTTP_PORT=8884
 HTTP_THREADS=1
 DOCROOT=www
 AUTHORISED_FILES=/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
