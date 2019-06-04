@@ -1,8 +1,12 @@
-FROM java:7-jre-alpine
+FROM openjdk:8-jre-slim
 
 MAINTAINER komuW <komuw05@gmail.com>
 
-RUN apk add --update bash && rm -rf /var/cache/apk/*
+RUN apt -y autoremove && \
+    apt -y clean && \
+    rm -rf ~/.cache/* && \
+    rm -rf /var/lib/{apt,dpkg,cache,log}/ && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY SMPPSim /app
 

@@ -54,7 +54,7 @@ PERCENTAGE_REJECTED=2
 # Time messages held in queue before being discarded, after a final state has been reached (milliseconds)
 # For example, after transitioning to DELIVERED (a final state), state info about this message will be
 # retained in the queue for a further (e.g.) 60000 milliseconds before being deleted.
-DISCARD_FROM_QUEUE_AFTER=60000
+DISCARD_FROM_QUEUE_AFTER=5000
 
 # Web Management
 HTTP_PORT=8884
@@ -84,8 +84,8 @@ ESME_TO_ESME=false
 
 # QUEUES
 # Maximum size parameters are expressed as max number of objects the queue can hold
-OUTBOUND_QUEUE_MAX_SIZE=1000
-INBOUND_QUEUE_MAX_SIZE=1000
+OUTBOUND_QUEUE_MAX_SIZE=250000
+INBOUND_QUEUE_MAX_SIZE=250000
 
 # The delayed inbound queue holds DELIVER_SM (MO) messages which could not be delivered to the selected ESME
 # because it replied "queue full". Such messages get stored in the delayed inbound queue and delivery is attempted again
